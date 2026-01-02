@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-"""object detection .ipynb
-
 object detection
 
 1- importing libraries
