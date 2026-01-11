@@ -31,3 +31,66 @@ precision, and inference speed.
 boxes. 
 7. Analysis – Reviewed strengths, weaknesses, and challenges to gain practical insights 
 into AI applications.
+
+
+# 🧠 Handwritten Digit Object Detection (Full Stack AI)
+
+A full-stack AI web application that detects and classifies handwritten digits using a CNN-based deep learning model built with TensorFlow. The system also predicts the bounding box of the digit using object detection techniques.
+
+---
+
+## 🚀 Features
+
+- ✍️ Draw any digit using mouse
+- 🧠 AI predicts digit + bounding box
+- 📊 Shows prediction confidence
+- 🕒 Keeps prediction history
+- ⚡ Fast React + Vite frontend
+- 🔥 Flask backend API
+- 🤖 CNN model trained on MNIST
+
+---
+
+## 🏗️ Tech Stack
+
+**Frontend:**
+- React + Vite
+- HTML5 Canvas
+- CSS3
+
+**Backend:**
+- Python
+- Flask
+- TensorFlow / Keras
+
+**Model:**
+- CNN for classification
+- Bounding box regression
+
+---
+
+## 📁 Project Structure
+
+---
+
+## ⚙️ How To Run Locally
+
+### 1️⃣ Backend
+
+```bash
+cd backend
+pip install flask tensorflow opencv-python flask-cors numpy
+python app.py
+
+Backend will run on:
+👉 http://127.0.0.1:5000
+
+cd frontend
+npm install
+npm run dev
+
+Frontend will run on:
+👉 http://localhost:5173
+```
+📸 Screenshots
+C:\Users\madhushree\Pictures\Screenshots\Screenshot 2026-01-11 200448.png
