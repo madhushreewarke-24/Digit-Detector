@@ -1,9 +1,9 @@
-# Object-Detection-Using-Tensorflow
+## Object-Detection-Using-Tensorflow
 In this project, I did Object Detection with TensorFlow, and the idea was to educate a computer in identifying and detecting objects in images.
 Here I have performed detection of  single digit number that is identify the number and position in the image. This topic object detection is now an integral part of our everyday lives—from security cameras and autonomous vehicles to healthcare and intelligent devices.
 I developed our model with TensorFlow, trained it with data sets, and tuned it so that it could recognize multiple objects simultaneously with good precision. It wasn't always a smooth process, though—there were issues such as working with large data sets and ensuring that the system was both fast and accurate. But issues like that served to show us how machine learning works in reality. This project was about seeing just how powerful and helpful AI can actually be.
 
-# Objective 
+## Objective 
 1. To train an object detection system that is capable of identifying and detecting 
 several objects within images  through the use of TensorFlow. 
 2. To implement deep learning methods (like transfer learning) for enhancing 
@@ -17,7 +17,7 @@ surveillance, autonomous vehicles, healthcare, and smart devices.
 6. To learn about challenges like dealing with big datasets, overfitting, and model 
 optimization, and identify implementable solutions for them.
 
-# Methodology 
+## Methodology 
 1. Problem Identification & Tool Selection – Identified object detection objectives and 
 chose TensorFlow due to its deep learning capabilities. 
 2. Dataset Preparation – Gathered images, scrubbed data, and annotated with bounding 
@@ -93,4 +93,28 @@ Frontend will run on:
 👉 http://localhost:5173
 ```
 📸 Screenshots
-C:\Users\madhushree\Pictures\Screenshots\Screenshot 2026-01-11 200448.png
+
+<img width="1919" height="905" alt="Screenshot 2026-01-11 200448" src="https://github.com/user-attachments/assets/1d3e9812-b615-4de5-807e-3237c5e8d675" />
+
+<img width="1919" height="906" alt="Screenshot 2026-01-11 200400" src="https://github.com/user-attachments/assets/86354633-5c26-499e-b432-35c53c8b65ca" />
+
+##🧪 Model Details
+
+Dataset: MNIST
+Input size: 75×75
+Output:
+Digit class (0–9)
+Bounding box (x1, y1, x2, y2)
+
+🎯 Use Cases
+
+Educational AI demos
+Computer Vision learning
+AI-based drawing recognition
+Resume & portfolio project
+
+👩‍💻 Author
+
+Madhushree Warke
+Computer Engineering Student
+Aspiring AI/ML Engineer
