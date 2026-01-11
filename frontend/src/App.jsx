@@ -30,23 +30,28 @@ function App() {
   };
 
  const predictDigit = async () => {
-  setLoading(true);
+    setLoading(true);
+    const image = canvasRef.current.toDataURL("image/png");
 
-  const image = canvasRef.current.toDataURL("image/png");
+    const res = await fetch("https://digit-detector-c0i7.onrender.com/predict", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ image }),
+    });
 
-  const res = await fetch("https://digit-detector-c0i7.onrender.com/predict", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ image }),
-  });
+    const data = await res.json();
 
-  const data = await res.json();
+    setPrediction(data.digit);
+    setConfidence(data.confidence);
 
-  setPrediction(data.prediction);
-  setConfidence(data.confidence); // if backend sends confidence
+    setHistory((prev) => [
+      { digit: data.digit, confidence: data.confidence, time: new Date().toLocaleTimeString() },
+      ...prev.slice(0, 4),
+    ]);
 
-  setLoading(false);
-};
+    drawBoundingBox(data.bbox);
+    setLoading(false);
+  };
 
 
   const clamp = (v) => Math.max(0, Math.min(1, v));
