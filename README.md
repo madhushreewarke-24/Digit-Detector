@@ -101,20 +101,29 @@ Frontend will run on:
 ##🧪 Model Details
 
 Dataset: MNIST
+
 Input size: 75×75
+
 Output:
+
 Digit class (0–9)
+
 Bounding box (x1, y1, x2, y2)
 
 🎯 Use Cases
 
 Educational AI demos
+
 Computer Vision learning
+
 AI-based drawing recognition
+
 Resume & portfolio project
 
 👩‍💻 Author
 
 Madhushree Warke
+
 Computer Engineering Student
+
 Aspiring AI/ML Engineer
